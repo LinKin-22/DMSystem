@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MuDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="EmployeeMaster">
+    <Key>
+      <PropertyRef Name="StudentID" />
+    </Key>
+    <Property Name="StudentID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="StudentRoll" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="StudentName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="DepartmentName" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="StudentAddress" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="ContactTitle" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="StudentEmail" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="MuDatabaseModelStoreContainer">
+    <EntitySet Name="EmployeeMaster" EntityType="Self.EmployeeMaster" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
